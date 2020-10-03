@@ -207,6 +207,8 @@ nav.primary-nav {
     @apply transition;
     @apply ease-in-out;
     @apply duration-200;
+    border-radius: 50%;
+    transition-property: all !important;
 
     &:hover {
       @apply text-fgColor;
