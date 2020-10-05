@@ -201,6 +201,9 @@ export default {
   },
   googleAnalytics: {
     id: process.env.GA_ID || "UA-61422507-2",
+    set: [
+      { field: 'anonymizeIp', value: true }
+    ],
   },
   gtm: {
     id: process.env.GTM_ID || "GTM-MXWD8NQ",

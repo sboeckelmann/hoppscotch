@@ -1,4 +1,5 @@
 FROM node:12.10.0-alpine
+ARG ENV_FILE=./.env
 
 LABEL maintainer="Liyas Thomas (liyascthomas@gmail.com)"
 
@@ -12,6 +13,7 @@ COPY package*.json ./
 
 RUN npm install
 
+COPY $ENV_FILE ./.env
 COPY . .
 
 RUN npm run build
